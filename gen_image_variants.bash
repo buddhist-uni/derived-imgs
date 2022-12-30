@@ -5,169 +5,169 @@ cd imgs
 
 
 echo "====IMAGERY COURSE IMAGES===="
-mkdir -p '$GITHUB_WORKSPACE/output/imagery'
+mkdir -p "$GITHUB_WORKSPACE/output/imagery"
 
 
-convert 'imagery/conclusion.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/conclusion.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/conclusion-1x.webp' &>.out &
+convert "imagery/conclusion.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/conclusion.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/conclusion-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/intro.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/intro.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/intro-1x.webp'
+convert "imagery/intro.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/intro.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/intro-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/raga.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/raga.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/raga-1x.webp' &>.out &
+convert "imagery/raga.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/raga.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/raga-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/sakkayaditthi.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/sakkayaditthi.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/sakkayaditthi-1x.webp'
+convert "imagery/sakkayaditthi.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/sakkayaditthi.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/sakkayaditthi-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/samadhi.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/samadhi.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/samadhi-1x.webp' &>.out &
+convert "imagery/samadhi.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/samadhi.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/samadhi-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/samatha-vipassana.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/samatha-vipassana.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/samatha-vipassana-1x.webp'
+convert "imagery/samatha-vipassana.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/samatha-vipassana.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/samatha-vipassana-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/sammaditthi.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/sammaditthi.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/sammaditthi-1x.webp' &>.out &
+convert "imagery/sammaditthi.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/sammaditthi.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/sammaditthi-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/sankhara.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/sankhara.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/sankhara-1x.webp'
+convert "imagery/sankhara.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/sankhara.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/sankhara-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/sukha.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/sukha.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/sukha-1x.webp' &>.out &
+convert "imagery/sukha.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/sukha.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/sukha-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/sunyata.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/sunyata.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/sunyata-1x.webp'
+convert "imagery/sunyata.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/sunyata.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/sunyata-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/tanha.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/tanha.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/tanha-1x.webp' &>.out &
+convert "imagery/tanha.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/tanha.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/tanha-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/thinamiddha.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/thinamiddha.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/thinamiddha-1x.webp'
+convert "imagery/thinamiddha.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/thinamiddha.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/thinamiddha-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/uddhaccakukkuca.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/uddhaccakukkuca.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/uddhaccakukkuca-1x.webp' &>.out &
+convert "imagery/uddhaccakukkuca.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/uddhaccakukkuca.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/uddhaccakukkuca-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/upadana.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/upadana.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/upadana-1x.webp'
+convert "imagery/upadana.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/upadana.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/upadana-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/upekkha.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/upekkha.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/upekkha-1x.webp' &>.out &
+convert "imagery/upekkha.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/upekkha.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/upekkha-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/vedana.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vedana.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vedana-1x.webp'
+convert "imagery/vedana.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vedana.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vedana-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/vedananupassana.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vedananupassana.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vedananupassana-1x.webp' &>.out &
+convert "imagery/vedananupassana.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vedananupassana.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vedananupassana-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/vicikiccha.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vicikiccha.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vicikiccha-1x.webp'
+convert "imagery/vicikiccha.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vicikiccha.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vicikiccha-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/vimutti.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vimutti.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vimutti-1x.webp' &>.out &
+convert "imagery/vimutti.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vimutti.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vimutti-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/vipassana.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vipassana.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vipassana-1x.webp'
+convert "imagery/vipassana.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vipassana.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vipassana-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/vitakka.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vitakka.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vitakka-1x.webp' &>.out &
+convert "imagery/vitakka.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vitakka.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vitakka-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/viveka.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/viveka.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/viveka-1x.webp'
+convert "imagery/viveka.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/viveka.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/viveka-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/vossagga.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vossagga.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vossagga-1x.webp' &>.out &
+convert "imagery/vossagga.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vossagga.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vossagga-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/vyapada.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/vyapada.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/vyapada-1x.webp'
+convert "imagery/vyapada.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/vyapada.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/vyapada-1x.webp"
 wait $pid
 cat .out
 
 
-convert 'imagery/yathabhutanyanadassana.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/yathabhutanyanadassana.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/yathabhutanyanadassana-1x.webp' &>.out &
+convert "imagery/yathabhutanyanadassana.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/yathabhutanyanadassana.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/yathabhutanyanadassana-1x.webp" &>.out &
 pid=$!
 
-convert 'imagery/yonisomanasikara.JPG' -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
-  -resize '1066x1280>' -write '$GITHUB_WORKSPACE/output/imagery/yonisomanasikara.webp' \
-  -resize 533 '$GITHUB_WORKSPACE/output/imagery/yonisomanasikara-1x.webp'
+convert "imagery/yonisomanasikara.JPG" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
+  -resize '1066x1280>' -write "$GITHUB_WORKSPACE/output/imagery/yonisomanasikara.webp" \
+  -resize 533 "$GITHUB_WORKSPACE/output/imagery/yonisomanasikara-1x.webp"
 wait $pid
 cat .out
 
 
 echo "====BUDDHISM+FUNCTION COURSE IMAGES===="
 
-mkdir '$GITHUB_WORKSPACE/output/buddhism'
-mkdir '$GITHUB_WORKSPACE/output/function'
+mkdir "$GITHUB_WORKSPACE/output/buddhism"
+mkdir "$GITHUB_WORKSPACE/output/function"
 convert "buddhism/Qing_Manjusri_Bodhisattva.jpg" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 \
   -resize '1280x1280>' -write "$GITHUB_WORKSPACE/output/buddhism/Qing_Manjusri_Bodhisattva.webp" \
   -resize '640x640>' "$GITHUB_WORKSPACE/output/buddhism/Qing_Manjusri_Bodhisattva-1x.webp" &>.out &
@@ -343,7 +343,7 @@ rm .out
 
 echo "====BIG_IMAGE BANNERS===="
 cd ../original_size_imgs
-mkdir $GITHUB_WORKSPACE/output/banners
+mkdir "$GITHUB_WORKSPACE/output/banners"
 convert "Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan.jpg" -verbose -strip -define webp:method=4 -define webp:pass=5 -define webp:target-psnr=49 -write mpr:orig \
   -crop '5973x2821+0+680' +repage -resize '2880x1360>' -write "$GITHUB_WORKSPACE/output/banners/Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan-2880-2x.webp" +delete \
   mpr:orig -crop '5973x2115+0+970' +repage -resize '1920x680>' -write "$GITHUB_WORKSPACE/output/banners/Wooden_gate_with_open_double_door_leading_to_the_garden_of_Isshinin_Buddhist_temple_in_the_compounds_of_Chion-in_Kyoto_Japan-1920-1x.webp" +delete \
